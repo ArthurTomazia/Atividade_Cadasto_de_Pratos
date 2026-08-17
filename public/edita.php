@@ -16,27 +16,33 @@ $livro =mysqli_fetch_assoc($resultado);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD - Livraria</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <title>Restaurante Tolin</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>CRUD - Livraria</h1>
+        <h1>Restaurante Tolin</h1>
     </header>
     <main>
-        <h2>Editando o livro <?php echo $livro["titulo"]?>!</h2>
+        <h2>Editando o Prato <?php echo $prato["prato"]?>!</h2>
         <form action="atualizar.php" method="POST">
-            <input type="hidden" name="id" value="<?php echo $livro["id"]?>">
+            <input type="hidden" name="id_prato" value="<?php echo $prato["id_prato"]?>">
 
-            <label for="titulo">Título:</label>
-            <input type="text" name="titulo" value="<?php echo $livro["titulo"]?>">
+            <label for="titulo">Usuário:</label>
+            <input type="text" name="usuario_compra" value="<?php echo $prato["usuario_compra"]?>">
             <br>
-            <label for="autor">Autor:</label>
-            <input type="text" name="autor" value="<?php echo $livro["autor"]?>">
+            <label for="titulo">Nome do prato:</label>
+            <input type="text" name="nome" value="<?php echo $prato["nome"]?>">
             <br>
-            <label for="ano">Ano de Publicação:</label>
-            <input type="number" name="ano" value="<?php echo $livro["ano"]?>">
+            <label for="autor">Descrição do prato:</label>
+            <input type="text" name="descricao" value="<?php echo $prato["descricao"]?>">
+            <br>
+            <label for="ano">Preço do prato:</label>
+            <input type="number" name="preco" value="<?php echo $prato["preco"]?>">
+            <br>
+            <label for="ano">Categoria do prato:</label>
+            <input type="number" name="categoria" value="<?php echo $prato["categoria"]?>">
             <br>
             <button type="submit">Atualizar</button>
         </form>

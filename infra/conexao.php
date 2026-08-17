@@ -5,7 +5,13 @@ $usuario = "root";
 $senha = "root";
 $banco = "restaurante_tolin_m1";
 
-$conexao = new mysqli($host, $usuario, $senha, $banco);
+$usuario_compra = "id_usuario";
+$nome = "nome";
+$descricao = "descricao";
+$preco = "preco";
+$categoria = "categoria";
+
+$conexao = new mysqli($host, $usuario, $senha, $banco, $nome, $descricap, $preco, $categoria);
 
 if ($conexao->connect_error) {
     die("Erro na conexão com o banco: " . $conexao->connect_error);
