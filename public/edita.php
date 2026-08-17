@@ -20,7 +20,8 @@ $livro =mysqli_fetch_assoc($resultado);
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 
-<body>
+
+  <body>
     <header>
         <h1>Restaurante Tolin</h1>
     </header>
