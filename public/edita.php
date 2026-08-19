@@ -53,6 +53,7 @@ $livro =mysqli_fetch_assoc($resultado);
 
     </footer>
 
+    
 
 </body>
 
