@@ -16,6 +16,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM prato");
 </head>
 
 <body>
+<div class="body-index">
     
     <h1>Cadastrar Pratos</h1>
 
@@ -39,7 +40,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM prato");
     </form>
    
 
-
+</div>
 </body>
 
 </html>
