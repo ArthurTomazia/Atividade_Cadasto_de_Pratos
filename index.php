@@ -1,8 +1,7 @@
-@@ -0,0 +1,69 @@
 <?php
 
 include "infra/conexao.php";
-$livros = mysqli_query($conexao, "SELECT * FROM livros");
+$pratos = mysqli_query($conexao, "SELECT * FROM pratos");
 
 ?>
 
