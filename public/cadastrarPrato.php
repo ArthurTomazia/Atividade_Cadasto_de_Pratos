@@ -1,6 +1,6 @@
 <?php
 
-include "infra/conexao.php";
+include "../infra/conexao.php";
 $pratos = mysqli_query($conexao, "SELECT * FROM prato");
 
 ?>
@@ -11,29 +11,13 @@ $pratos = mysqli_query($conexao, "SELECT * FROM prato");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante Tolin</title>
+    <title>Cadastrar Prato</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
     
-
-    <div class="caixa">
-        <p>
-            <button><a href="public/cadastrarUsuario.php">Cadastrar Usuario</a></button>
-            <button><a href="public/cadastrarPrato.php">Novo Prato</a></button>
-        </p>
-
-
-
-    </div>
-
-
-
-
-
-
-    <h1>Ver Prato</h1>
+    <h1>Cadastrar Pratos</h1>
 
     <form action="public/cadastrar.php" method="POST">
         <label for="nome">Nome do Prato:</label>
