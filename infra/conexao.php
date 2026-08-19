@@ -11,7 +11,7 @@ $descricao = "descricao";
 $preco = "preco";
 $categoria = "categoria";
 
-$conexao = new mysqli($host, $usuario, $senha, $banco, $nome, $descricao, $preco, $categoria);
+$conexao = new mysqli($host, $usuario, $senha, $banco, $nome, $descricao, $preco, $categoria, $prato);
 
 if ($conexao->connect_error) {
     die("Erro na conexão com o banco: " . $conexao->connect_error);
