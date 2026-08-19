@@ -1,7 +1,7 @@
 <?php
 
 include "infra/conexao.php";
-$pratos = mysqli_query($conexao, "SELECT * FROM pratos");
+$pratos = mysqli_query($conexao, "SELECT * FROM prato");
 
 ?>
 
@@ -37,7 +37,7 @@ $pratos = mysqli_query($conexao, "SELECT * FROM pratos");
         <br>
         <button type="submit">Fazer Pedido</button>
     </form>
-
+   
 
 
 </body>
